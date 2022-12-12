@@ -5,53 +5,59 @@ public class Product {
     private String color;
   
     public Product() {
-        name = "";
-        price = 0;
-        brand = "";
-        color = "";
+      name = "";
+      price = 0;
+      brand = "";
+      color = "";
     }
   
     public Product(String name, double price, String brand, String color) {
-        this.name = name;
-        this.price = price;
-        this.brand = brand;
-        this.color = color;
+      this.name = name;
+      this.price = price;
+      this.brand = brand;
+      this.color = color;
     }
   
     public String getName() {
-        return name;
+      return name;
     }
   
     public double getPrice() {
-        return price;
+      return price;
     }
-
+  
     public String getBrand() {
-        return brand;
+      return brand;
     }
-
+  
     public String getColor() {
-        return color;
+      return color;
     }
   
     public void setName(String name) {
-        this.name = name;
+      this.name = name;
     }
   
-    public void setPrice(double price) {
-        this.price = price;
+    public boolean negotiatePrice(double newPrice) {
+      if (newPrice >= price - (price * 0.2)) {
+        price = newPrice;
+        return true;
+      } else {
+        return false;
+      }
     }
-
+  
     public void setBrand(String brand) {
-        this.brand = brand;
+      this.brand = brand;
     }
-
+  
     public void setColor(String color) {
-        this.color = color;
+      this.color = color;
     }
   
     public String toString() {
-        String data = "Product Name: " + name + "\nProduct Price: " + price + "\nBrand: " + brand + "\nColor: " + color;
-        return data;
+      String data = "Product Name: " + name + "\nProduct Price: " + price + "\nBrand: " + brand + "\nColor: " + color;
+      return data;
     }
-}
+  }
+  
