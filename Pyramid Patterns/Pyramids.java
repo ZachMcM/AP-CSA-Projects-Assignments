@@ -1,4 +1,4 @@
-class Main {
+class Pyramids {
     public static void main(String[] args) {
       System.out.println("Pattern A");
       for (int i = 1; i <= 6; i++) {

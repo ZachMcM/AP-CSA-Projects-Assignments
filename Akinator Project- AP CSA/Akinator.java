@@ -9,10 +9,7 @@
 
 import java.util.Scanner;
 
-class Main {
-  /**
- * @param args
- */
+class Akinator {
 public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
     System.out.println("Please choose you favorite streaming service and I will guess it");

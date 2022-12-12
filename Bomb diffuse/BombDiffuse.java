@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-class Main {
+class BombDiffuse {
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
     boolean red;
